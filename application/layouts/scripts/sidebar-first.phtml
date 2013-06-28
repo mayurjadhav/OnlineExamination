@@ -1,11 +1,13 @@
 <div class="section">
   <div class="region region-sidebar-first">
+
+
     <div class="block block-user" id="block-user-login">
 
       <h2>User login</h2>
 
       <div class="content">
-        <form accept-charset="UTF-8" id="user-login-form" method="post" action="/acquia_drupal/node?destination=node"><div><div class="form-item form-type-textfield form-item-name">
+        <form accept-charset="UTF-8" id="user-login-form" method="post" action="/user/login"><div><div class="form-item form-type-textfield form-item-name">
               <label for="edit-name">Username <span title="This field is required." class="form-required">*</span></label>
               <input type="text" class="form-text required" maxlength="60" size="15" value="" name="name" id="edit-name">
             </div>
@@ -19,14 +21,10 @@
             <input type="hidden" value="user_login_block" name="form_id">
             <div id="edit-actions" class="form-actions form-wrapper"><input type="submit" class="form-submit" value="Log in" name="op" id="edit-submit"></div></div></form>  </div>
     </div>
+
     <div class="block block-system contextual-links-region block-menu" id="block-system-navigation">
       <h2>Navigation</h2>
-      <div class="contextual-links-wrapper contextual-links-processed"><a href="#" class="contextual-links-trigger">Configure</a><ul class="contextual-links"><li class="menu-list first"><a href="/acquia_drupal/admin/structure/menu/manage/navigation/list?destination=node">List links</a></li>
-          <li class="menu-edit"><a href="/acquia_drupal/admin/structure/menu/manage/navigation/edit?destination=node">Edit menu</a></li>
-          <li class="block-configure last"><a href="/acquia_drupal/admin/structure/block/manage/system/navigation/configure?destination=node">Configure block</a></li>
-        </ul>
-      </div>
-      <div class="content">
+        <div class="content">
         <ul class="menu clearfix"><li class="first collapsed"><a href="/acquia_drupal/node/add">Add content</a></li>
           <li class="last leaf"><a href="/acquia_drupal/civicrm/dashboard">CiviCRM</a></li>
         </ul>

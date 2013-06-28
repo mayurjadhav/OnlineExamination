@@ -5,10 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Online Examination</title>
     <?php
-    echo $this->headLink()->appendStylesheet($this->baseUrl() . '/css/style.css');
-    echo $this->headLink()->appendStylesheet($this->baseUrl() . '/css/layout.css');
-    echo $this->headLink()->appendStylesheet($this->baseUrl() . '/css/system.css');
-    echo $this->headLink()->appendStylesheet($this->baseUrl() . '/css/color.css');
+    $this->headLink()->appendStylesheet($this->baseUrl() . '/css/style.css')
+        ->appendStylesheet($this->baseUrl() . '/css/layout.css')
+        ->appendStylesheet($this->baseUrl() . '/css/system.theme.css')
+        ->appendStylesheet($this->baseUrl() . '/css/system.base.css')
+        ->appendStylesheet($this->baseUrl() . '/css/color.css');
+    echo $this->headLink();
     ?>
   </head>
   <body class="html front not-logged-in one-sidebar sidebar-first page-node">

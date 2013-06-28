@@ -15,7 +15,7 @@ class UserController extends Zend_Controller_Action
 
     public function loginAction()
     {
-        // action body
+        $this->view->first_sidebar = false;
     }
 
 
