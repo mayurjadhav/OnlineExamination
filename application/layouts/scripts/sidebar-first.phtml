@@ -1,21 +1,23 @@
 <div class="section">
   <div class="region region-sidebar-first">
-    <div class="block block-search contextual-links-region" id="block-search-form">
-      <div class="contextual-links-wrapper contextual-links-processed"><a href="#" class="contextual-links-trigger">Configure</a><ul class="contextual-links"><li class="block-configure first last"><a href="/acquia_drupal/admin/structure/block/manage/search/form/configure?destination=node">Configure block</a></li>
-        </ul>
-      </div>
+    <div class="block block-user" id="block-user-login">
+
+      <h2>User login</h2>
+
       <div class="content">
-        <form accept-charset="UTF-8" id="search-block-form" method="post" action="/acquia_drupal/"><div><div class="container-inline">
-              <h2 class="element-invisible">Search form</h2>
-              <div class="form-item form-type-textfield form-item-search-block-form">
-                <label for="edit-search-block-form--2" class="element-invisible">Search </label>
-                <input type="text" class="form-text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" title="Enter the terms you wish to search for.">
-              </div>
-              <div id="edit-actions" class="form-actions form-wrapper"><input type="submit" class="form-submit" value="Search" name="op" id="edit-submit"></div><input type="hidden" value="form-4--jxcwY2CVZ08sXNcv6AzErz-ElWlOdXAxGa5BzKuo" name="form_build_id">
-              <input type="hidden" value="OHZqni0fp1d97C2s5iPWk7uD5eZFh5kk-tWNzNLih18" name="form_token">
-              <input type="hidden" value="search_block_form" name="form_id">
+        <form accept-charset="UTF-8" id="user-login-form" method="post" action="/acquia_drupal/node?destination=node"><div><div class="form-item form-type-textfield form-item-name">
+              <label for="edit-name">Username <span title="This field is required." class="form-required">*</span></label>
+              <input type="text" class="form-text required" maxlength="60" size="15" value="" name="name" id="edit-name">
             </div>
-          </div></form>  </div>
+            <div class="form-item form-type-password form-item-pass">
+              <label for="edit-pass">Password <span title="This field is required." class="form-required">*</span></label>
+              <input type="password" class="form-text required" maxlength="128" size="15" name="pass" id="edit-pass">
+            </div>
+            <div class="item-list"><ul><li class="first"><a title="Create a new user account." href="/acquia_drupal/user/register">Create new account</a></li>
+                <li class="last"><a title="Request new password via e-mail." href="/acquia_drupal/user/password">Request new password</a></li>
+              </ul></div><input type="hidden" value="form-ZnTm8pRR6WaH_icdz9iiQ-32NmJxRZvbHevsIfMjC2A" name="form_build_id">
+            <input type="hidden" value="user_login_block" name="form_id">
+            <div id="edit-actions" class="form-actions form-wrapper"><input type="submit" class="form-submit" value="Log in" name="op" id="edit-submit"></div></div></form>  </div>
     </div>
     <div class="block block-system contextual-links-region block-menu" id="block-system-navigation">
       <h2>Navigation</h2>
